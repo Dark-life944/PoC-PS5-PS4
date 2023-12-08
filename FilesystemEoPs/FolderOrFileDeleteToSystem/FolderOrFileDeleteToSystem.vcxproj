@@ -93,6 +93,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Rpcrt4.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <ResourceCompile>
       <AdditionalOptions>/D SYSTEM_CMD_LAUNCHER_DLL=$(OUTDIR)\SystemCmdLauncher.dll</AdditionalOptions>
@@ -113,6 +114,7 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Rpcrt4.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <ResourceCompile>
       <AdditionalOptions>/D SYSTEM_CMD_LAUNCHER_DLL=$(OUTDIR)\SystemCmdLauncher.dll</AdditionalOptions>
@@ -129,6 +131,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Rpcrt4.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <ResourceCompile>
       <AdditionalOptions>/D SYSTEM_CMD_LAUNCHER_DLL=$(OUTDIR)\SystemCmdLauncher.dll</AdditionalOptions>
@@ -149,6 +152,7 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Rpcrt4.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <ResourceCompile>
       <AdditionalOptions>/D SYSTEM_CMD_LAUNCHER_DLL=$(OUTDIR)\SystemCmdLauncher.dll</AdditionalOptions>
@@ -156,21 +160,17 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="FolderOrFileDeleteToSystem.cpp" />
-    <ClCompile Include="Win-Ops-Master.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="NtDefine.h" />
     <ClInclude Include="resource.h" />
-    <ClInclude Include="Win-Ops-Master.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="FolderOrFileDeleteToSystem.rc" />
   </ItemGroup>
   <ItemGroup>
     <None Include="5eeabb3.rbs" />
-    <None Include="Msi_Rollback.msi" />
-    <None Include="rbf1.bin" />
-    <None Include="rbf2.bin" />
+    <None Include="Msi_EoP.msi" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

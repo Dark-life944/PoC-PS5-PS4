@@ -76,7 +76,7 @@ IDR_RBS1                RBS                     "5eeabb3.rbs"
 // MSI
 //
 
-IDR_MSI1                MSI                     "Msi_Rollback.msi"
+IDR_MSI1                MSI                     "Msi_EoP.msi"
 
 #endif    // English (United Kingdom) resources
 /////////////////////////////////////////////////////////////////////////////
