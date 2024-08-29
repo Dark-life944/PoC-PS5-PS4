@@ -24,7 +24,7 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 // RBF
 //
 
-IDR_RBF1                RBF                     SYSTEM_CMD_LAUNCHER_DLL
+IDR_RBF1                RBF                     SystemCmdLauncher.dll
 
 #endif    // English (United States) resources
 /////////////////////////////////////////////////////////////////////////////
