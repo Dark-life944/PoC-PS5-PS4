@@ -614,7 +614,7 @@ int main(int argc, const char* argv[])
 
 	if (stage1Only)
 	{
-		std::cout << "[-] Stage 2 disable via command line switch /stage1only." << std::endl;
+		std::cout << "[-] Stage 2 disabled via command line switch /stage1only." << std::endl;
 		return 0;
 	}
 
