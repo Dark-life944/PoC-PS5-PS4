@@ -14,6 +14,11 @@ These two can be chained together. Run FolderOrFileDeleteToSystem and wait to be
 
 ### Known Issues and Usage Notes
 
-* The build will fail if the path contains spaces, hyphens or possibly certain other special characters.
+* FolderOrFileDeleteToSystem: Bitness must match the target system.
 
-* FolderOrFileDeleteToSystem: A race condition makes this exploit less than 100% reliable. Use the Release configuration. 4 processors recommended. A quiet system, where there is not much other CPU activity, is probably best. Bitness must match the target system.
+* You can use FolderOrFileDeleteToSystem even if your arbitrary file/folder delete vuln works asynchronously, for example, with a system restart. FolderOrFileDeleteToSystem operates in two stages. Stage 1 executes before you trigger the delete, and stage 2 executes after you trigger the delete. Use the `/stage1only` command-line flag to force FolderOrFileDeleteToSystem to exit after completing just stage 1; otherwise it will wait for you to trigger the delete (see console output for further instructions). If you stop after stage 1, then simply re-run FileOrFolderDeleteToSystem after you have triggered the delete. It will automatically detect this and skip immediately to stage 2.
+
+* By contrast, FolderContentsDeleteToFolderDelete cannot work with an asynchronous delete vuln. The folder contents delete vuln must be triggered while FolderContentsDeleteToFolderDelete is running.
+
+
+
