@@ -42,20 +42,18 @@ pip install pyelftools
 -----------------------------
 ## Usage :
 
-🚀 How to Run
-
-1️⃣ Running the Exploit on PS5/PS4
+1️⃣ Running the Exploit on linux :
 
 First, ensure you have a Wi-Fi card that supports Monitor Mode.
-Then, run the exploit:
-
-sudo python3 exploit.py wlan0 kernel.bin
-
-wlan0 → Your Wi-Fi network interface (check with ifconfig)
-
-kernel.bin → A kernel dump for analysis
 
 
-If you have already patched the kernel and just want to send the crafted packets:
+wifi0 → Your Wi-Fi network interface (check with ifconfig)
 
-sudo python3 exploit.py wlan0 kernel.bin --already-patched
+# 1
+```
+git clone https://github.com/Dark-life944/PoC-PS5-PS4.git && cd PoC-PS5-PS4 && cd CVE-2022-23088
+```
+# 2
+```
+
+```
