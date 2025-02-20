@@ -22,11 +22,6 @@ shellcode.bin → Shellcode to be injected into memory
 
 x86.py → Helper functions for calculating memory addresses
 
-README.md → This documentation
-
-LICENSE → License information
-
-
 
 -----------------------------
 
