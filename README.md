@@ -9,8 +9,8 @@
 
 CVE-2022-23088 is a heap overflow vulnerability in the Wi-Fi stack of FreeBSD, which can be exploited by sending specially crafted Wi-Fi frames.
 
-✅ Work on FreeBSD 13.0=<
-✅ Can be modified for PS4/PS5 with jailbreak ??
+- ✅ Work on FreeBSD 13.0=<
+- ✅ Can be modified for PS4/PS5 with jailbreak ??
 
 ----------------------------
 
@@ -27,9 +27,9 @@ x86.py → Helper functions for calculating memory addresses
 
 ## 🛠️ Requirements
 
-🔹 Wi-Fi card that supports Monitor Mode
-🔹 Linux environment (for running the exploit)
-🔹 Python dependencies (pip)
+- Wi-Fi card that supports Monitor Mode
+- Linux environment (for running the exploit)
+- Python dependencies (pip)
 ```
 pip install pyelftools
 ```
