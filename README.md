@@ -50,5 +50,9 @@ git clone https://github.com/Dark-life944/PoC-PS5-PS4.git && cd PoC-PS5-PS4 && c
 ```
 # 2
 ```
+sudo ifconfig wifi0 down && sudo iwconfig wifi0 mode monitor && sudo ifconfig wifi0 up
+```
+# 3 
+```
 
 ```
